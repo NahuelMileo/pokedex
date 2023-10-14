@@ -5,21 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 
-<body>
-    <p id="nombre" class="h-12"></p>
-    <p id="id"></p>
-    <ul id="tipos" class="flex">
-    </ul>
-    <img src="" id="sprite" alt="">
-    <script src="app.js"></script>
+<body class="bg-slate-300">
 
-    <button id="anterior"><</button>
-    <button id="siguiente">></button>
-    <input id="numero" type="number">
-    <button id="enviar">enviar</button>
+    <div class="">
+        <div class="h-screen flex items-center justify-center">
+            <button id="anterior" class="rounded-full font-bold text-4xl w-16 h-16 border-2"><</button>
+            <div id="medio" class="text-center mx-16">
+                 <div id="card" class="bg-slate-500 h-[30rem] w-[22rem] rounded-3xl border-2">
+                        <img src="" id="sprite" alt="" class="mx-auto w-64 h-64">
+                        <ul id="tipos" class="flex justify-center mb-20 font-medium">
+                        </ul>
+                        <p id="id" class="text-2xl mb-3"></p>
+                        <p id="nombre" class="text-4xl font-bold"></p>
+                    </div>
+                    <div id="div-buscar" class="mt-5">
+                        <input id="numero" type="number">
+                    <label for="shiny" class="font-medium ml-5">Shiny</label>
+                    <input id="shiny" type="checkbox">
+                    <br>
+                    <button id="buscar" class="text-2xl border-2 electricL rounded-full font-medium  px-5 py-2 mt-5">Buscar</button>
+                    </div>
+                </div>
+                <button id="siguiente" class="rounded-full font-bold text-4xl w-16 h-16 border-2">></button>
+            </div>
+            <input type="number">
+        </div>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
