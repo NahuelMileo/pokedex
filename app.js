@@ -87,6 +87,7 @@ function cargarPokemon(pokemon) {
             li.classList.add('text-2xl');
             li.classList.add('mx-4');
             li.classList.add('px-4');
+            // li.classList.add('l')
             li.classList.add('rounded-full');
 
             const tipoClases = {
